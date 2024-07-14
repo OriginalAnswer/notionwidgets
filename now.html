@@ -15,6 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color-scheme: light dark;
         }
         #date-container {
             width: 100%;
@@ -28,6 +29,11 @@
             font-size: 1.5em;
             font-weight: bold;
             overflow: hidden;
+        }
+        @media (prefers-color-scheme: dark) {
+            #date-container {
+                color: rgb(255, 255, 255);
+            }
         }
     </style>
 </head>
